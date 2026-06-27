@@ -13,7 +13,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
             color: #1a1a1a;
             background-color: #f5f5f5;
         }
@@ -50,7 +50,7 @@
         
         p {
             margin-bottom: 1rem;
-            color: #666;
+            color: #555;
             text-align: justify;
         }
         
@@ -60,15 +60,17 @@
         }
         
         li {
-            margin-bottom: 0.5rem;
-            color: #666;
+            margin-bottom: 0.8rem;
+            color: #555;
         }
         
         .last-updated {
             text-align: center;
             color: #999;
-            font-size: 0.9rem;
-            margin-top: 2rem;
+            font-size: 0.95rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
         }
         
         a {
@@ -83,16 +85,26 @@
         .back-link {
             display: inline-block;
             margin-bottom: 2rem;
-            padding: 0.5rem 1rem;
+            padding: 0.7rem 1.5rem;
             background: #ff006e;
             color: white;
             border-radius: 5px;
             text-decoration: none;
+            transition: all 0.3s ease;
         }
         
         .back-link:hover {
             text-decoration: none;
             opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            border-left: 4px solid #ff006e;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -101,111 +113,188 @@
         <a href="index.html" class="back-link">← Back to Home</a>
         
         <h1>Privacy Policy</h1>
-        <p><strong>TalkSyra</strong> Privacy Policy</p>
+        <p style="text-align: center; color: #999;">Last Updated: 27 June 2026</p>
         
-        <h2>1. Introduction</h2>
+        <h2>1. INTRODUCTION</h2>
         <p>
-            Welcome to TalkSyra. We are committed to protecting your privacy and ensuring you have a positive experience 
-            on our website and mobile application. This Privacy Policy explains how we collect, use, disclose, and protect 
-            your information.
+            Welcome to <strong>TalkSyra</strong> ("we," "our," or "us"). We are committed to protecting your personal information 
+            and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information 
+            when you use our mobile application (TalkSyra). 
+        </p>
+        <p>
+            Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not 
+            access the application.
         </p>
         
-        <h2>2. Information We Collect</h2>
-        <h3>Personal Information:</h3>
+        <h2>2. INFORMATION WE COLLECT</h2>
+        <p>
+            We collect personal information that you voluntarily provide to us when you register on the Application, express an 
+            interest in obtaining information about us or our products and Services, or otherwise when you contact us.
+        </p>
+        
+        <h3>A. Personal Data</h3>
+        <p>While using our Application, we may ask you to provide us with certain personally identifiable information, including:</p>
         <ul>
-            <li>Name and contact information</li>
-            <li>Email address and phone number</li>
-            <li>Age and date of birth</li>
-            <li>Profile photos and information</li>
-            <li>Location data (with permission)</li>
-            <li>Payment and billing information (if applicable)</li>
+            <li><strong>Name and Email:</strong> Collected via Google Sign-In or Email Authentication</li>
+            <li><strong>Profile Information:</strong> Gender, Sexual Orientation, Birthday (to calculate age), and Bio</li>
+            <li><strong>Media:</strong> Photos and albums you upload to your profile</li>
+            <li><strong>Authentication Data:</strong> Provided by Supabase Auth</li>
         </ul>
         
-        <h3>Automatically Collected Information:</h3>
-        <ul>
-            <li>Device information and identifiers</li>
-            <li>IP address and browser type</li>
-            <li>Usage patterns and preferences</li>
-            <li>Cookies and tracking data</li>
-        </ul>
-        
-        <h2>3. How We Use Your Information</h2>
-        <p>We use the collected information for the following purposes:</p>
-        <ul>
-            <li>To create and maintain your account</li>
-            <li>To provide and improve our services</li>
-            <li>To personalize your experience</li>
-            <li>To process transactions</li>
-            <li>To send you updates and notifications</li>
-            <li>To ensure safety and prevent fraud</li>
-            <li>To comply with legal obligations</li>
-        </ul>
-        
-        <h2>4. Data Security</h2>
+        <h3>B. Precise Location Information</h3>
         <p>
-            We implement industry-standard security measures to protect your personal information. However, no security 
-            system is completely secure. We encourage you to use strong passwords and keep your account information confidential.
-        </p>
-        
-        <h2>5. Sharing of Information</h2>
-        <p>
-            We do not sell your personal information to third parties. We may share information only:
+            TalkSyra is a location-based discovery app. We collect and process your GPS location data to:
         </p>
         <ul>
-            <li>With your consent</li>
-            <li>With service providers who assist in operating our platform</li>
-            <li>When required by law</li>
-            <li>To protect rights and safety</li>
+            <li>Show you nearby users</li>
+            <li>Calculate distances between you and other users</li>
+            <li>Provide location-based filters (e.g., "Same City")</li>
         </ul>
+        <p>
+            <strong>Important:</strong> You can enable or disable location tracking in your device settings at any time. 
+            TalkSyra will not function without location permissions, but the choice remains with you.
+        </p>
         
-        <h2>6. User Rights</h2>
-        <p>You have the right to:</p>
+        <h3>C. Device and Usage Data</h3>
+        <p>
+            We collect information about your mobile device, including:
+        </p>
         <ul>
-            <li>Access your personal information</li>
-            <li>Correct inaccurate data</li>
-            <li>Delete your account and data</li>
-            <li>Opt-out of marketing communications</li>
-            <li>Request a copy of your data</li>
+            <li>Device ID and unique device identifiers</li>
+            <li>Device model and operating system</li>
+            <li>App usage statistics (e.g., swipes, matches, and chat activity)</li>
+            <li>Crash reports and performance metrics</li>
         </ul>
         
-        <h2>7. Cookies</h2>
+        <h2>3. HOW WE USE YOUR INFORMATION</h2>
+        <p>We use the information we collect for the following purposes:</p>
+        <ul>
+            <li>To facilitate account creation and logon process (via Supabase & Google)</li>
+            <li>To enable user-to-user discovery and matching based on location and preferences</li>
+            <li>To manage user profiles and display them to other users</li>
+            <li>To facilitate communication through our real-time chat feature</li>
+            <li>To provide Premium features (unlocked via rewarded advertisements)</li>
+            <li>To improve our app's functionality and user experience</li>
+            <li>To enforce our Terms of Service and protect users from harassment (Blocking/Reporting)</li>
+            <li>To personalize user experience and recommendations</li>
+            <li>To comply with legal and regulatory requirements</li>
+        </ul>
+        
+        <h2>4. DATA SHARING AND THIRD-PARTY SERVICES</h2>
         <p>
-            We use cookies to enhance your experience. You can control cookie settings through your browser. 
-            Disabling cookies may affect functionality.
+            We share your data only with the following essential service providers:
+        </p>
+        <ul>
+            <li><strong>Supabase:</strong> For secure database management, real-time chat, and authentication</li>
+            <li><strong>Google Mobile Ads (AdMob):</strong> To serve advertisements. AdMob may use device identifiers to personalize ads</li>
+            <li><strong>Firebase (Google):</strong> For sending push notifications regarding new messages and matches</li>
+            <li><strong>Google Sign-In:</strong> For secure social authentication</li>
+        </ul>
+        
+        <div class="highlight">
+            <strong>Important:</strong> We DO NOT sell, rent, or trade your personal data to third parties for marketing purposes.
+        </div>
+        
+        <h2>5. ADVERTISEMENTS AND COOKIES</h2>
+        <p>
+            TalkSyra uses Google AdMob to display advertisements. These ads help keep the service free for users. AdMob may 
+            collect and use certain data (such as Android Advertising ID) to show relevant ads. 
+        </p>
+        <p>
+            By using TalkSyra, you consent to the collection of data by Google for personalized advertising. You can manage 
+            your ad preferences in your device settings.
         </p>
         
-        <h2>8. Age Restrictions</h2>
+        <h2>6. USER SAFETY AND MODERATION</h2>
         <p>
-            TalkSyra is intended for users 18 years of age and older. We do not knowingly collect information 
-            from minors. If we become aware of such collection, we will delete the information immediately.
+            Your safety is our priority. We provide tools for:
+        </p>
+        <ul>
+            <li><strong>Reporting:</strong> Users can report profiles for inappropriate content or harassment</li>
+            <li><strong>Blocking:</strong> Users can block any individual to prevent further interaction</li>
+            <li><strong>Verification:</strong> We may offer verification badges to enhance community trust</li>
+        </ul>
+        <p>
+            We reserve the right to terminate accounts that violate our community standards. Our moderation team reviews 
+            reports and takes appropriate action to maintain a safe environment for all users.
         </p>
         
-        <h2>9. Third-Party Links</h2>
+        <h2>7. DATA RETENTION AND DELETION</h2>
         <p>
-            Our website may contain links to third-party websites. We are not responsible for their privacy practices. 
-            Please review their privacy policies before providing any information.
+            We keep your personal information for as long as it is necessary for the purposes set out in this privacy policy.
+        </p>
+        <ul>
+            <li><strong>Account Deletion:</strong> You can request to delete your account at any time through the app settings</li>
+            <li><strong>Data Removal:</strong> Upon deletion, your profile, photos, and chat history will be permanently removed from our active databases</li>
+            <li><strong>Backup Data:</strong> Some data may be retained in backups for up to 90 days before being permanently destroyed</li>
+        </ul>
+        
+        <h2>8. AGE RESTRICTION (18+)</h2>
+        <div class="highlight">
+            <strong>Age Requirement:</strong> TalkSyra is strictly for adults aged 18 and older. We do not knowingly collect data 
+            from or market to children under 18 years of age. If we learn that personal information from a user under age 18 has 
+            been collected, we will deactivate the account immediately.
+        </div>
+        
+        <h2>9. SECURITY OF YOUR INFORMATION</h2>
+        <p>
+            We use administrative, technical, and physical security measures (including Supabase RLS policies and encryption) 
+            to help protect your personal information. However, no electronic transmission over the internet or information storage 
+            technology can be guaranteed to be 100% secure.
+        </p>
+        <p>
+            We encourage you to:
+        </p>
+        <ul>
+            <li>Use strong, unique passwords</li>
+            <li>Enable two-factor authentication if available</li>
+            <li>Never share your account credentials</li>
+            <li>Report suspicious activity immediately</li>
+        </ul>
+        
+        <h2>10. YOUR PRIVACY RIGHTS</h2>
+        <p>
+            Depending on your location, you may have the following rights:
+        </p>
+        <ul>
+            <li><strong>Access:</strong> You have the right to access your personal data</li>
+            <li><strong>Correction:</strong> You can correct inaccurate data</li>
+            <li><strong>Deletion:</strong> You can request deletion of your account and personal data</li>
+            <li><strong>Data Portability:</strong> You can request a copy of your data in a portable format</li>
+            <li><strong>Opt-out:</strong> You can opt out of marketing communications</li>
+        </ul>
+        
+        <h2>11. CHANGES TO THIS POLICY</h2>
+        <p>
+            We may update this privacy policy from time to time. The updated version will be indicated by an updated 
+            "Last Updated" date and will be effective as soon as it is accessible. We encourage you to review this privacy 
+            policy frequently to stay informed about how we protect your information.
         </p>
         
-        <h2>10. Contact Us</h2>
+        <h2>12. CONTACT US</h2>
         <p>
-            If you have questions about this Privacy Policy or our privacy practices, please contact us:
+            If you have questions or comments about this policy, concerns about our privacy practices, or wish to exercise 
+            your privacy rights, please contact us:
         </p>
-        <p>
-            <strong>TalkSyra Support</strong><br>
-            Phone: <a href="tel:+919588819276">+91 9588819276</a> or <a href="tel:+917878488474">+91 7878488474</a><br>
-            Email: <a href="mailto:privacy@talksyra.app">privacy@talksyra.app</a><br>
-            Website: <a href="https://talksyra.app">talksyra.app</a>
-        </p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:privacy@talksyra.app">privacy@talksyra.app</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+919588819276">+91 9588819276</a> or <a href="tel:+917878488474">+91 7878488474</a></li>
+            <li><strong>Website:</strong> <a href="https://talksyra.app">talksyra.app</a></li>
+            <li><strong>App:</strong> <a href="https://play.google.com/store/apps/details?id=com.talksyra.app" target="_blank">TalkSyra on Google Play Store</a></li>
+        </ul>
         
-        <h2>11. Policy Updates</h2>
+        <h2>13. COMPLIANCE WITH DATA PROTECTION LAWS</h2>
         <p>
-            We may update this Privacy Policy periodically. Changes will be effective immediately upon posting. 
-            Continued use of our services constitutes acceptance of updated policies.
+            TalkSyra complies with applicable data protection laws and regulations. If you are located in the European Union 
+            or other jurisdictions with data protection requirements, we ensure appropriate safeguards are in place for your data.
         </p>
         
         <div class="last-updated">
-            <p>Last Updated: December 2024</p>
-            <p>Privacy Policy Version: 1.0</p>
+            <p><strong>Last Updated:</strong> 27 June 2026</p>
+            <p><strong>Privacy Policy Version:</strong> 2.0</p>
+            <p style="margin-top: 1rem; font-size: 0.85rem;">
+                This privacy policy is effective and applies to all users of the TalkSyra mobile application.
+            </p>
         </div>
     </div>
 </body>

@@ -3,6 +3,7 @@ const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
     navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
 });
 
@@ -10,6 +11,7 @@ hamburger.addEventListener('click', () => {
 const navLinks = document.querySelectorAll('.nav-menu a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
         navMenu.style.display = 'none';
     });
 });
@@ -29,10 +31,17 @@ style.textContent = `
             padding: 2rem;
             gap: 1rem;
             width: 100%;
+            text-align: center;
         }
 
         .nav-menu.active {
             display: flex;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 0.8rem 0;
+            text-align: center;
         }
     }
 `;
