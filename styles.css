@@ -759,11 +759,14 @@ body {
     }
 
     .header-icons {
-        display: flex;
-        order: 2;
+        display: none !important;
     }
 
     .hamburger {
+        display: none !important;
+    }
+
+    .download-icon-btn {
         display: none !important;
     }
 
