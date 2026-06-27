@@ -698,6 +698,437 @@ body {
     color: white;
 }
 
+/* Footer Buttons Section */
+.footer-buttons {
+    background: linear-gradient(135deg, rgba(255, 0, 110, 0.1), rgba(131, 56, 236, 0.1));
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.footer-buttons h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.footer-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    gap: 0.5rem;
+    min-height: 120px;
+}
+
+.footer-btn i {
+    font-size: 1.8rem;
+}
+
+.footer-btn span {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer-btn:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 0, 110, 0.3);
+}
+
+.btn-primary.footer-btn {
+    background: linear-gradient(135deg, #ff006e, #ff3385);
+}
+
+.btn-secondary.footer-btn {
+    background: linear-gradient(135deg, #8338ec, #a855f7);
+}
+
+.btn-accent.footer-btn {
+    background: linear-gradient(135deg, #3a86ff, #60a5fa);
+}
+
+.btn-success.footer-btn {
+    background: linear-gradient(135deg, #06b6d4, #14b8a6);
+}
+
+.btn-warning.footer-btn {
+    background: linear-gradient(135deg, #f59e0b, #ec4899);
+}
+
+.btn-danger.footer-btn {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+/* Page Content Styling */
+.page-content {
+    padding: 3rem 0;
+    min-height: 70vh;
+}
+
+.breadcrumb {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    font-size: 2.8rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: var(--text-light);
+    font-size: 1.2rem;
+}
+
+.about-main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-intro, .features-highlight, .stats-section, .team-section, .cta-section {
+    margin-bottom: 3rem;
+}
+
+.about-intro h2, .features-highlight h2, .stats-section h2, .team-section h2, .cta-section h2 {
+    font-size: 2rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+}
+
+.about-intro p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.highlight-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.highlight-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(255, 0, 110, 0.2);
+    border-color: var(--primary-color);
+}
+
+.highlight-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.highlight-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.highlight-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.stat-item {
+    background: var(--gradient);
+    padding: 2rem;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(255, 0, 110, 0.2);
+}
+
+.stat-item h4 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.values-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.value-item {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.value-item i {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    margin-top: 0.3rem;
+}
+
+.value-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.value-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.cta-section {
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 0, 110, 0.1), rgba(131, 56, 236, 0.1));
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.cta-section p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Steps and Accordion Styling */
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.step {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.step:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(255, 0, 110, 0.2);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 auto 1rem;
+}
+
+.step h3 {
+    color: var(--text-dark);
+    margin-bottom: 0.8rem;
+}
+
+.step p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.tip-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--primary-color);
+}
+
+.tip-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.tip-card h4 {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.tip-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.faq-accordion {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.faq-item {
+    background: white;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.faq-item h4 {
+    padding: 1.2rem;
+    background: linear-gradient(135deg, rgba(255, 0, 110, 0.1), rgba(131, 56, 236, 0.1));
+    color: var(--text-dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.faq-item h4:hover {
+    background: linear-gradient(135deg, rgba(255, 0, 110, 0.2), rgba(131, 56, 236, 0.2));
+}
+
+.faq-item h4 i {
+    color: var(--primary-color);
+}
+
+.faq-item p {
+    padding: 1rem 1.2rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.feature-detail-item {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid var(--primary-color);
+}
+
+.feature-detail-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.feature-detail-item h3 {
+    color: var(--text-dark);
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.feature-detail-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.comparison-table thead {
+    background: var(--gradient);
+    color: white;
+}
+
+.comparison-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.comparison-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table tbody tr:hover {
+    background: rgba(255, 0, 110, 0.05);
+}
+
+.comparison-table i {
+    font-size: 1.2rem;
+}
+
+.comparison-table .fa-check {
+    color: #10b981;
+}
+
+.comparison-table .fa-times {
+    color: #ef4444;
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
