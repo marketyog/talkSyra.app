@@ -47,6 +47,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-logo {
@@ -710,16 +711,60 @@ body {
         padding: 0 15px;
     }
 
+    .navbar .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
     .nav-menu {
+        display: flex !important;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: transparent !important;
+        padding: 0.5rem 0 !important;
+        order: 3;
+    }
+
+    .nav-menu li {
+        flex-shrink: 0;
+    }
+
+    .nav-menu a {
+        display: inline-block;
+        padding: 0.6rem 1rem;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #ff006e, #8338ec);
+        color: white !important;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu a:hover {
+        color: white;
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(255, 0, 110, 0.3);
+    }
+
+    .nav-menu a::after {
         display: none;
     }
 
     .header-icons {
         display: flex;
+        order: 2;
     }
 
     .hamburger {
-        display: flex;
+        display: none !important;
     }
 
     /* Center all section headings on tablet */
@@ -867,6 +912,20 @@ body {
 
     .nav-logo {
         font-size: 1.3rem;
+    }
+
+    .nav-menu {
+        gap: 0.3rem;
+    }
+
+    .nav-menu a {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .download-icon-btn {
+        padding: 8px 12px;
+        font-size: 1rem;
     }
 
     /* Center all content on small mobile */

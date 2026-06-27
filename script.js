@@ -1,18 +1,24 @@
-// Hamburger Menu
+// Hamburger Menu (for small screens)
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-});
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+    });
+}
 
 // Close menu when link is clicked
 const navLinks = document.querySelectorAll('.nav-menu a');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.style.display = 'none';
+        if (hamburger) {
+            hamburger.classList.remove('active');
+        }
+        if (window.innerWidth <= 768) {
+            navMenu.style.display = 'flex';
+        }
     });
 });
 
